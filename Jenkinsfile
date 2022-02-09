@@ -65,6 +65,7 @@ stage('Deploy Test'){
         sh "./deploy.sh test $TAG_NAME"
     }
 }
+        
 stage("End to End Tests") {
     when {
         branch 'master'
